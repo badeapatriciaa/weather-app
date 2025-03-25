@@ -14,6 +14,13 @@
                 
                 if (response) {
                     alert("You chose wisely.");
+                    // Create and display the cookie emoji after the user clicks OK
+                    let cookieImage = document.createElement('div');
+                    cookieImage.textContent = '🍪'; // Set the emoji text
+                    cookieImage.style.fontSize = '100px'; // Size of the emoji
+                    cookieImage.style.textAlign = 'center';
+                    cookieImage.style.marginTop = '20px';
+                    document.body.appendChild(cookieImage); // Add the emoji to the page
                 } else {
                     alert("Wrong choice. Try again.");
                 }
