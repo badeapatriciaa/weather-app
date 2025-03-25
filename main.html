@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Întrebare Sâmbăta</title>
+    <script>
+        function showDialog() {
+            const response = confirm("Vrei să ieșim sâmbătă?");
+            if (response) {
+                alert("Ai spus 'Da'.");
+            } else {
+                alert("Ai spus 'Nu'.");
+            }
+        }
+    </script>
+</head>
+<body onload="showDialog()">
+    <h1>Pagina de Test</h1>
+    <p>Vezi dialogul care apare automat!</p>
+</body>
+</html>
