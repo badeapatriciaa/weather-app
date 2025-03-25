@@ -6,11 +6,17 @@
     <title>:) Hi there biscotto</title>
     <script>
         function showDialog() {
-            const response = confirm("Wanna stay at my place :)?");
-            if (response) {
-                alert("You chose wisely.");
-            } else {
-                alert("Wrong choice.");
+            let response = false;
+            
+            // Keep asking until user clicks OK
+            while (!response) {
+                response = confirm("Wanna stay at my place :)?");
+                
+                if (response) {
+                    alert("You chose wisely.");
+                } else {
+                    alert("Wrong choice. Try again.");
+                }
             }
         }
     </script>
